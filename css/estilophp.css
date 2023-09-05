@@ -1,0 +1,77 @@
+
+.card {
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 15px;
+    overflow: hidden;
+    transform: translate(0);
+    margin: 16px;
+    margin-left: 33.5%;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -64px;
+    left: -64px;
+    width: 150%;
+    height: 76%;
+    transform: rotate(-12deg);
+    z-index: -1;
+}
+
+.card::before {
+    background: linear-gradient(170deg, #D5EAEB, #EDB8C8, #D5EAEB);
+}
+
+.card .product {
+    height: 180px;
+    width: 300px;
+    object-fit: contain;
+    margin-top: -42px;
+    margin-left: 80px;
+    margin-right: 24px;
+}
+
+.card .preco {
+    text-align: right;
+    margin-top: -24px;
+}
+
+.card .preco :is(h6, h4) {
+    color: #ffffff;
+    margin: 0;
+}
+
+.card .preco h6 {
+    color: #FEAE59;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.card .preco h4 {
+    color: #333;
+    font-size: 24px;
+    margin-top: -4px;
+}
+
+.card .a-right {
+
+    text-align: right;
+    margin-top: 64px;
+}
+
+.card a {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #EDB7C4;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 48px;
+    cursor: pointer;
+}

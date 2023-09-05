@@ -1,0 +1,74 @@
+body{
+    background-color: pink;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#square {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    max-width: 200px;
+    
+    background-color:purple ;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px 2px #000f;
+}
+#square:hover{
+    background-color: salmon;
+}
+
+@media screen and (max-width:500px){
+ .carrousel-inner{
+    width: 30%;
+ }
+ .navbar-brand{
+    width: 30%;
+ }
+ .container{
+    width: 50%;
+ }
+}
+    
+@media(max-width:500px){
+    body{
+        width: 50%;
+    }
+    img{
+        width: 30%;
+    }
+    
+   }
+      
+
+telalogin {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

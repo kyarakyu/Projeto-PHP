@@ -1,0 +1,283 @@
+<?php
+    session_start();
+    //print_r($_SESSION);
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
+    {
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header('Location: login.php');
+    }
+    $logado = $_SESSION['email'];
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./js/bootstrap.min.js">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="icon" href="./img/CC_20230209_103124.png">
+
+</head>
+<head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand"><img src="./img/logo.png" alt="icone" width="10%"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 25%;">
+        <ul class="navbar-nav">
+           
+            <li class="nav-item">
+              <a class="nav-link" href="contatosFuncionario.html">Contatos</a>
+            </li>
+            <li class="nav-item">
+                  <a class="nav-link" href="./php - produtos/tabela.php">Produtos Cadastrados</a>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./php - produtos/cadastrarproduto.php">Cadastrar produtos</a>
+            </li>
+            <li class="nav-item">
+                  <a class="nav-link" href="./cadastro-funcionarios/tabelaFuncionario.php">Funcionários Cadastrados</a>
+                </li>
+                <li class="nav-item">
+              <a class="nav-link" href="sobrenosFuncionario.html">Sobre nós</a>
+            </li>
+          </ul>
+          <nav class="navbar navbar-light">
+          </nav>
+        </div>
+        <div class="d-flex">
+          <a href="./cadastro-login/sair.php" class="btn btn-danger">Sair</a>
+        </div>
+      </nav>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" >
+            <img class="d-block w-100" src="./img/capa002.png" alt="Primeiro Slide" id="img2">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="texto">
+              <h1>Lumière</h1>
+              <p id="p1">Poesia que acende</p>
+            </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/capa03.png" alt="Segundo Slide" id="img2">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Lumière</h1>
+              <p id="p1">Poesia que acende</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/capa04.png" alt="Terceiro Slide" id="img2">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Lumière</h1>
+              <p id="p1">Poesia que acende</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+    </head><br><br>
+
+  <div class="linha" style="margin-left: 9%;">
+    <h2>Aromas Relaxantes</h2>
+  </div>
+</div>
+<br>
+
+
+ <div class="linha">
+  <div class="coluna">
+  </div>
+ 
+    <div class="coluna">
+     <div class="flip-img">
+        <div class="flip-img-inner">
+          <div class="flip-img-front">
+          <img  src="./img/IMG-20230207-WA0008.jpg" width="100%" height="100%"/>
+          </div>
+          <div class="flip-img-back">
+            <img src="./img/IMG-20230207-WA0009.jpg"/>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="coluna"> <br><b>Vela Aromática</b><br> <br>Ajuda a criar um clima agradável, relaxante e promove bem-estar. 
+      Ensinamos todos os passos de como usar em casa e aproveitar ao máximo todas as vantagens desse objeto desejado do momento!</div>
+      <img src="./img/icono-4.png" width="30%">
+    </div>
+ <div class="coluna">
+  
+</div>
+
+
+ <div class="linha" >
+  <div class="coluna">
+  </div>
+  <div class="coluna">
+  </div>
+  <div class="coluna">
+  </div>
+  <div class="coluna">
+  </div>
+  <div class="coluna">
+  </div>
+  <div class="coluna">
+  </div>
+  <div class="coluna">
+  </div>
+    <div class="coluna"> <br><b>Vela aromática x Vela comum</b> <br><br>
+
+      As velas comuns não possuem aroma, já as velas aromáticas, os aromas fazem parte da composição e ajudam a transmitir sensações de bem-estar</div>
+      <div class="flip-img">
+        <div class="flip-img-inner">
+          <div class="flip-img-front">
+          <img  src="./img/IMG-20230207-WA0011.jpg"/>
+          </div>
+          <div class="flip-img-back">
+            <img src="./img/IMG-20230207-WA0010.jpg"/>
+        </div>
+        </div>
+      </div>
+    </div>
+ </div>
+<br><br><br>
+
+<div class="linha"style="background-color: #E5DCDF;"> <br>
+ <h2 style="margin-left: 9%;">Como usar a vela aromática de forma correta?</h2>
+</div>
+<div class="linha" style="background-color: #E5DCDF;">
+  <p style="margin-left: 9%;">A vela aromática precisa de cuidados especiais para exalar o aroma de forma correta, 
+    o primeiro passo é deixar a vela acesa durante 30 minutos, o pavio apagado deve ter no mínimo 4mm de altura, se a chama estiver muito alta, acima de 2cm, corte o pavio antes de acender a vela. Nunca deixe sua vela queimando por mais de 4 horas seguidas, e sempre com a supervisão de um adulto! Não toque na cera enquanto a vela estiver acesa. 
+    Não utilize mais a vela quando tiver ¼ de cera no fundo. </p><img src="./img/1676553702353.png" width="10%" style="margin-right: 10%;">
+</div>
+<br><br><br>
+ <div class="coluna">
+</div>
+<div class="coluna">
+</div>
+
+<div class="linha" style="margin-left: 9%;"> <h2>Benefícios dos sabonetes Lumiére</h2></div><br>
+  <div class="container">
+  <div class="owl-carousel owl-theme">
+      <div class="item">
+        <div class="card" style="width: 18rem;" id="borda">
+          <img class="card-img-top" src="./img/soap.png" width="100%" alt="Imagem de capa do card">
+          <div class="card-body">
+            <p class="card-text">A essência de frutas silvestres proporciona relaxamento e energização. O aroma favorece a lucidez de ideias produzindo um ambiente afrodisíaco suave.</p>
+            <br>
+          </div>
+      </div>
+      </div> <br>
+      <div class="item" ><div class="card" style="width: 18rem;" id="borda">
+        <img class="card-img-top" src="./img/soap2.png" alt="Imagem de capa do card">
+        <div class="card-body">
+          <p class="card-text">A essência de Bamboo alivia o estresse, traz proteção, serenidade e calma e também é capaz de refrescar seus ambientes sem sobrecarregar os sentidos por ser um aroma cítrico suave.</p>
+        </div>
+      </div></div> <br>
+      <div class="item" ><div class="card" style="width: 18rem;" id="borda">
+        <img class="card-img-top" src="./img/soap3.png" alt="Imagem de capa do card">
+        <div class="card-body">
+          <p class="card-text">A essência do Capim Limão auxilia na concentração e ajuda contra a insônia também, podendo ser saudável até para crianças hiperativas ou com problemas durante o sono.</p>
+        </div>
+      </div></div> <br>
+      <div class="item" ><div class="card" style="width: 18rem;" id="borda">
+        <img class="card-img-top" src="./img/soap4.png" alt="Imagem de capa do card">
+        <div class="card-body">
+          <p class="card-text">A essência de Algodão, por ter uma nota florada adocicada, proporciona a tranquilidade mental e muito boa para combater a insônia.</p>
+        </div>
+      </div></div> <br>
+      <div class="item"><div class="card" style="width: 18rem;" id="borda">
+        <img class="card-img-top" src="./img/soap5.png" alt="Imagem de capa do card">
+        <div class="card-body">
+          <p class="card-text">A essência Flor de Algodão possui um intenso toque floral cítrico que transmite frescor e energia ao ambiente e harmoniza bem com ambientes como áreas de circulação, lavabos e ambientes clínico</p>
+        </div>
+      </div></div><br>
+      
+  </div>
+</div>
+<br><br>
+<div class="card text-black" id="borda">
+  <img class="card-img" src="./img/pexels-brand-_-palms-768939.jpg" alt="Imagem do card" width="100%">
+  <div class="card-img-overlay">
+    <p class="card-title" id="p2">Aromas Relaxantes</p>
+    <p class="card-text" id="p3">Cuide da sua mente e seu corpo</p>
+
+  </div>
+</div>
+
+
+<div class="whats">
+  <a href="https://wa.me/5521979249199" target="_blank">
+  <img src="./img/whats1.png" width="60" alt="Fale Conosco pelo Whatsapp" title="Fale Conosco pelo Whatsapp" />
+</a>
+</div>
+
+
+<footer>
+    <div class="boxs">
+        <h2>Início</h2>
+        <ul>
+            <li><a href="telaInicialCliente.html">Home</a></li>
+            <li><a href="./php - produtos/produto.php">Produtos</a></li>
+        </ul>
+    </div>
+    <div class="boxs">
+        <h2>Informações</h2>
+        <ul>
+            <li><a href="https://instagram.com/lumierearoma?igshid=ZDdkNTZiNTM=">Instagram</a></li>
+            <li><a href="https://wa.me/5521969763424">Whatsapp</a></li>
+        </ul>
+    </div>
+    <div class="boxs">
+    <h2>Aréa Administrativa</h2>
+        <ul>
+            <li><a href="./login do login/logindologin.php">Login</a></li>
+            <li><a href="./login do login/editarsenha.php">Alterar senha dos funcionários</a></li>
+        </ul>
+    </div>
+     <div class="boxs">
+        <h2>Sobre nós</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Corrupti, magnam ipsam quis natus cumque ad nulla laudantium ex reiciendis
+            consequatur quasi blanditiis dolorum culpa repudiandae consectetur asperiores officia nobis excepturi?
+        </p>
+</footer>
+
+<div class="footer">
+    <h2><img src="./img/CC_20230209_103124.png" width="7%" alt="logo"></h2>
+</div>
+
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/setup.js"></script>
+
+</body>
+
+
+</html>
+

@@ -1,0 +1,66 @@
+body{
+    background-color: pink;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#square {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    max-width: 200px;
+    
+    background-color:#a77fa3 ;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px 2px #000f;
+}
+#square:hover{
+    background-color: salmon;
+}
+
+@media screen and (max-width:500px){
+ .carrousel-inner{
+    width: 30%;
+ }
+ .navbar-brand{
+    width: 30%;
+ }
+ .container{
+    width: 50%;
+ }
+}
+    
+@media(max-width:500px){
+    body{
+        width: 50%;
+    }
+    img{
+        width: 30%;
+    }
+    
+   }
+      
+
+img{
+    margin-top: 40px;
+    margin-left: -10px;
+}
+
+.linha{
+    display: flex;
+
+}
+
+.coluna{
+    float: left;
+    width: 50%;
+    padding: 26px;
+}
+
+.formulario{
+
+    float:right;
+}
